@@ -1,0 +1,138 @@
+.header--register {
+  font-size: 14px;
+  line-height: 17px;
+  letter-spacing: 0.01em;
+  color: var(--black);
+  opacity: 0.4;
+}
+.header--register-wrap {
+  width: 100%;
+}
+@media (max-width: 1023px) {
+  .header--register-wrap {
+    margin-top: 20px;
+  }
+}
+.header--register:hover {
+  opacity: 1;
+  text-decoration: underline;
+}
+.header--company {
+  background: rgba(217, 217, 217, 0.7);
+  border-radius: 5px;
+  padding: 14px 10px 18px;
+  min-height: 36px;
+  min-width: 144px;
+  position: relative;
+}
+.header--company-mobile {
+  min-height: 75px;
+  display: none;
+  margin: 0 auto;
+}
+@media (max-width: 1023px) {
+  .header--company-mobile {
+    display: flex;
+  }
+}
+.header--company-mobile > div {
+  flex: 1;
+}
+.header--company div:not(.preloader) {
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 12px;
+  color: rgba(0, 0, 0, 0.4);
+}
+.header--company div:not(.preloader) span {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 17px;
+  display: block;
+  margin-left: 10px;
+}
+.header--company div:not(.preloader):first-child {
+  margin-bottom: 2px;
+}
+.header--company div:not(.preloader):first-child span {
+  color: var(--black);
+}
+.header--company div:not(.preloader):last-child span {
+  color: var(--green);
+}
+.header--enter {
+  padding: 4px 12px;
+  background: var(--blueLight);
+  border-radius: 5px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  letter-spacing: 0.01em;
+  text-decoration: none;
+  color: var(--black);
+}
+.header--enter:hover {
+  background: var(--blue);
+  color: var(--white);
+}
+.header--user {
+  min-width: 414px;
+}
+@media (max-width: 1023px) {
+  .header--user {
+    min-width: auto;
+  }
+}
+.header--user-main {
+  margin-left: auto;
+}
+.header--user-name {
+  font-size: 14px;
+  line-height: 17px;
+}
+.header--user-exit {
+  font-size: 10px;
+  line-height: 12px;
+  color: rgba(0, 0, 0, 0.4);
+  margin-top: 3px;
+}
+.header--user-exit:hover {
+  text-decoration: underline;
+}
+.header--user-image {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-left: 4px;
+}
+.header--user-image img {
+  object-fit: contain;
+  width: 100%;
+  height: 100%;
+}
+.header--user-auth {
+  margin-left: auto;
+}
+@media (max-width: 1023px) {
+  .header--user-auth {
+    margin: 20px 0 0;
+    flex-direction: column;
+  }
+}
+.header--user-auth span {
+  width: 2px;
+  height: 26px;
+  display: block;
+  background: var(--blue);
+  margin: 0 20px;
+}
+@media (max-width: 1023px) {
+  .header--user-auth span {
+    width: 100%;
+    margin: 10px 0;
+    height: 1px;
+  }
+}
+
+/*# sourceMappingURL=user.css.map */

@@ -1,0 +1,23 @@
+.index--fon {
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+}
+@media (max-width: 1023px) {
+  .index--fon {
+    gap: 20px;
+    grid-template-columns: 1fr 0.5fr;
+  }
+}
+@media (max-width: 479px) {
+  .index--fon {
+    grid-template-columns: 1fr;
+  }
+  .index--fon-right {
+    display: none;
+  }
+}
+.index--fon img {
+  max-width: 100%;
+}
+
+/*# sourceMappingURL=index_fon.css.map */

@@ -1,0 +1,24 @@
+footer {
+  background: var(--blue);
+}
+
+.footer--copy {
+  margin-top: auto;
+}
+.footer--contacts {
+  padding: 25px 0;
+  font-size: 14px;
+  line-height: 17px;
+  text-align: right;
+  letter-spacing: 0.01em;
+  color: var(--white);
+}
+.footer--contacts a {
+  color: inherit;
+  text-decoration: none;
+}
+.footer--contacts a:hover {
+  text-decoration: underline;
+}
+
+/*# sourceMappingURL=footer.css.map */

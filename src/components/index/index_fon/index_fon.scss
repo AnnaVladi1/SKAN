@@ -1,0 +1,21 @@
+@import "../../../assets/css/mixins";
+.index {
+  &--fon {
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+
+    @include _1024 {
+      gap: 20px;
+      grid-template-columns: 1fr 0.5fr;
+    }
+    @include _480 {
+      grid-template-columns: 1fr;
+      &-right {
+        display: none;
+      }
+    }
+    img {
+      max-width: 100%;
+    }
+  }
+}

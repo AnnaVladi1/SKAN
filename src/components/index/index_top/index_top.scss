@@ -1,0 +1,75 @@
+@import "../../../assets/css/mixins";
+
+.top {
+  &--left {
+    max-width: 744px;
+    z-index: 2;
+    @include _1320 {
+      max-width: 600px;
+    }
+    @include _1024 {
+      max-width: 100%;
+    }
+
+    span {
+      font-size: 20px;
+      line-height: 24px;
+      margin: 20px 0 70px 0;
+      display: block;
+      max-width: 534px;
+      @include _1320 {
+        font-size: 16px;
+        line-height: 20px;
+        max-width: 400px;
+        margin: 20px 0 40px;
+      }
+      @include _1024 {
+        max-width: 100%;
+        margin: 20px 0 32px;
+      }
+    }
+
+    a {
+      padding: 14px 64px;
+      background: var(--purple);
+      border-radius: 5px;
+      color: var(--white);
+      font-weight: 500;
+      font-size: 22px;
+      line-height: 27px;
+      text-decoration: none;
+      @include _1320 {
+        font-size: 18px;
+        line-height: 22px;
+      }
+    }
+  }
+
+  &--wrap {
+    position: relative;
+    @include _1024 {
+      flex-direction: column;
+    }
+  }
+
+  &--right {
+    position: absolute;
+    right: 0;
+    top: -45px;
+    width: 50%;
+    img {
+      max-width: 100%;
+    }
+    @include _1320 {
+      width: 45%;
+      top: 0;
+    }
+    @include _1024 {
+      position: relative;
+      top: 0;
+      width: 100%;
+      max-width: 400px;
+      margin: 0 auto;
+    }
+  }
+}

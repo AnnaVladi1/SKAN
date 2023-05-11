@@ -1,0 +1,114 @@
+@import "../../../assets/css/mixins";
+
+.middle {
+  &--wrap {
+    margin-top: 200px;
+    @include _1024 {
+      margin-top: 55px;
+    }
+  }
+
+  &--slider {
+    padding: 0 25px;
+    position: relative;
+    @include _768 {
+      .keen-slider {
+        align-items: flex-start;
+        transition: height 0.3s;
+
+        .keen-slider__slide {
+          min-height: auto !important;
+          height: auto;
+        }
+      }
+    }
+  }
+
+  &--slide {
+    padding: 70px 0;
+    @include _1320 {
+      padding: 40px 0;
+    }
+
+    > div {
+      padding: 0 15px;
+      height: 100%;
+      display: flex;
+      @include _768 {
+        height: auto;
+      }
+
+      > div {
+        background: var(--white);
+        padding: 30px 20px 46px 20px;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+        border-radius: 10px;
+        width: 100%;
+        @include _1320 {
+          padding: 20px 14px 30px;
+        }
+      }
+
+      span {
+        font-size: 18px;
+        line-height: 22px;
+        margin-top: 20px;
+        display: block;
+        @include _1320 {
+          font-size: 16px;
+          line-height: 20px;
+          margin-top: 10px;
+        }
+      }
+    }
+  }
+}
+
+.keen {
+  &--icon {
+    @include _1320 {
+      max-width: 58px;
+    }
+  }
+
+  &-arrow {
+    padding: 8px;
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+
+    svg {
+      transition: .3s all ease;
+      width: 32px;
+      height: 32px;
+      color: var(--gray);
+
+      &.arrow--disabled {
+        color: var(--darkGray);
+      }
+    }
+
+    &:hover {
+      svg {
+        color: #b4b4b4;
+      }
+    }
+
+    &.arrow {
+      &--left {
+        left: -8px;
+      }
+
+      &--right {
+        right: -8px;
+      }
+    }
+
+  }
+
+  &-slider {
+    &-middle {
+      //padding: 70px 0;
+    }
+  }
+}

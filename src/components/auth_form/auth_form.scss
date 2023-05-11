@@ -1,0 +1,122 @@
+@import "../../assets/css/mixins";
+
+.form {
+  &--wrap {
+    grid-row: span 2;
+    max-width: 430px;
+    width: 100%;
+    padding: 55px 0 0 50px;
+    position: relative;
+    @include _1024 {
+      margin: 40px auto 0;
+      grid-row: 2;
+      padding: 82px 0 0 0;
+    }
+  }
+
+  &--main {
+    padding: 25px 25px 40px 25px;
+    background: var(--white);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+    border-radius: 10px;
+  }
+
+  &--lock {
+    position: absolute;
+    left: 0;
+    top: 0;
+    @include _1024 {
+      left: 81px;
+    }
+  }
+
+  &--tabs {
+    gap: 15px;
+
+    li {
+      flex: 1;
+      text-align: center;
+      font-size: 16px;
+      line-height: 19px;
+
+      button {
+        width: 100%;
+        padding-bottom: 8px;
+        border-bottom: 2px solid var(--gray);
+        color: var(--gray);
+
+        &.active, &:hover {
+          color: var(--blue);
+          border-color: var(--blue);
+        }
+      }
+    }
+  }
+
+  &--methods {
+    margin-top: 30px;
+
+    > div {
+      &:first-child {
+        font-size: 16px;
+        line-height: 19px;
+        letter-spacing: 0.02em;
+        margin-bottom: 15px;
+        color: var(--darkGray);
+      }
+    }
+
+    &-main {
+      gap: 10px;
+
+      button {
+        border: 1px solid rgba(89, 112, 255, 0.51);
+        border-radius: 3px;
+        width: 96px;
+        height: 31px;
+      }
+    }
+  }
+
+  &--restore {
+    font-size: 14px;
+    line-height: 17px;
+    color: var(--purple);
+
+    letter-spacing: 0.02em;
+    text-decoration-line: underline;
+    margin: 15px auto 0;
+
+    &:hover {
+      text-decoration: none;
+    }
+  }
+
+  &--enter {
+    color: var(--white);
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 27px;
+    padding: 16px 0;
+    width: 100%;
+    border-radius: 5px;
+    background: var(--purple);
+    justify-content: center;
+
+    &:disabled {
+      opacity: .5;
+    }
+  }
+
+  &--inputs {
+    margin: 40px 0 0 0;
+
+    > div {
+      margin-bottom: 20px;
+
+      &:last-child {
+        margin-bottom: 30px;
+      }
+    }
+  }
+}

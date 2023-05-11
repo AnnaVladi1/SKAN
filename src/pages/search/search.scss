@@ -1,0 +1,58 @@
+@import "../../assets/css/mixins";
+
+.search {
+  &--top {
+    position: relative;
+    div {
+      position: absolute;
+      right: -91px;
+      bottom: 0;
+      @include _1320 {
+        right: 0;
+      }
+      @include _1024 {
+        max-width: 58px;
+        top: 50%;
+        transform: translate(0, -50%);
+      }
+    }
+    @include _1024 {
+      padding-right: 58px;
+    }
+  }
+  &--wrap {
+    margin-bottom: 70px;
+    @include _1320 {
+      flex-direction: column;
+    }
+    h1 {
+      font-size: 40px;
+      line-height: 48px;
+      letter-spacing: 0.03em;
+      max-width: 800px;
+      @include _1024 {
+        font-size: 28px;
+        line-height: 34px;
+      }
+    }
+    p {
+      font-size: 20px;
+      line-height: 24px;
+      letter-spacing: 0.02em;
+      margin: 25px 0 40px;
+      @include _1024 {
+        font-size: 18px;
+        line-height: 22px;
+        margin: 20px 0;
+      }
+    }
+
+  }
+  &--left {
+    max-width: 872px;
+    width: 100%;
+    @include _1320 {
+      max-width: 100%;
+    }
+  }
+}
